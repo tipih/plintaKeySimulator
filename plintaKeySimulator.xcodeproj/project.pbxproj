@@ -1,0 +1,471 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		60A65CA218EE8C400089F111 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 60A65CA118EE8C400089F111 /* Foundation.framework */; };
+		60A65CA418EE8C400089F111 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 60A65CA318EE8C400089F111 /* CoreGraphics.framework */; };
+		60A65CA618EE8C400089F111 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 60A65CA518EE8C400089F111 /* UIKit.framework */; };
+		60A65CAC18EE8C400089F111 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 60A65CAA18EE8C400089F111 /* InfoPlist.strings */; };
+		60A65CAE18EE8C400089F111 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 60A65CAD18EE8C400089F111 /* main.m */; };
+		60A65CB218EE8C400089F111 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 60A65CB118EE8C400089F111 /* AppDelegate.m */; };
+		60A65CB518EE8C400089F111 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 60A65CB318EE8C400089F111 /* Main.storyboard */; };
+		60A65CB818EE8C400089F111 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 60A65CB718EE8C400089F111 /* ViewController.m */; };
+		60A65CBA18EE8C400089F111 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 60A65CB918EE8C400089F111 /* Images.xcassets */; };
+		60A65CC118EE8C400089F111 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 60A65CC018EE8C400089F111 /* XCTest.framework */; };
+		60A65CC218EE8C400089F111 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 60A65CA118EE8C400089F111 /* Foundation.framework */; };
+		60A65CC318EE8C400089F111 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 60A65CA518EE8C400089F111 /* UIKit.framework */; };
+		60A65CCB18EE8C400089F111 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 60A65CC918EE8C400089F111 /* InfoPlist.strings */; };
+		60A65CCD18EE8C400089F111 /* plintaKeySimulatorTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 60A65CCC18EE8C400089F111 /* plintaKeySimulatorTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		60A65CC418EE8C400089F111 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 60A65C9618EE8C400089F111 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 60A65C9D18EE8C400089F111;
+			remoteInfo = plintaKeySimulator;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		60A65C9E18EE8C400089F111 /* plintaKeySimulator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = plintaKeySimulator.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		60A65CA118EE8C400089F111 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		60A65CA318EE8C400089F111 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		60A65CA518EE8C400089F111 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		60A65CA918EE8C400089F111 /* plintaKeySimulator-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "plintaKeySimulator-Info.plist"; sourceTree = "<group>"; };
+		60A65CAB18EE8C400089F111 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		60A65CAD18EE8C400089F111 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		60A65CAF18EE8C400089F111 /* plintaKeySimulator-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "plintaKeySimulator-Prefix.pch"; sourceTree = "<group>"; };
+		60A65CB018EE8C400089F111 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		60A65CB118EE8C400089F111 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		60A65CB418EE8C400089F111 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		60A65CB618EE8C400089F111 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		60A65CB718EE8C400089F111 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		60A65CB918EE8C400089F111 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		60A65CBF18EE8C400089F111 /* plintaKeySimulatorTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = plintaKeySimulatorTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		60A65CC018EE8C400089F111 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		60A65CC818EE8C400089F111 /* plintaKeySimulatorTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "plintaKeySimulatorTests-Info.plist"; sourceTree = "<group>"; };
+		60A65CCA18EE8C400089F111 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		60A65CCC18EE8C400089F111 /* plintaKeySimulatorTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = plintaKeySimulatorTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		60A65C9B18EE8C400089F111 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				60A65CA418EE8C400089F111 /* CoreGraphics.framework in Frameworks */,
+				60A65CA618EE8C400089F111 /* UIKit.framework in Frameworks */,
+				60A65CA218EE8C400089F111 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		60A65CBC18EE8C400089F111 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				60A65CC118EE8C400089F111 /* XCTest.framework in Frameworks */,
+				60A65CC318EE8C400089F111 /* UIKit.framework in Frameworks */,
+				60A65CC218EE8C400089F111 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		60A65C9518EE8C400089F111 = {
+			isa = PBXGroup;
+			children = (
+				60A65CA718EE8C400089F111 /* plintaKeySimulator */,
+				60A65CC618EE8C400089F111 /* plintaKeySimulatorTests */,
+				60A65CA018EE8C400089F111 /* Frameworks */,
+				60A65C9F18EE8C400089F111 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		60A65C9F18EE8C400089F111 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				60A65C9E18EE8C400089F111 /* plintaKeySimulator.app */,
+				60A65CBF18EE8C400089F111 /* plintaKeySimulatorTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		60A65CA018EE8C400089F111 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				60A65CA118EE8C400089F111 /* Foundation.framework */,
+				60A65CA318EE8C400089F111 /* CoreGraphics.framework */,
+				60A65CA518EE8C400089F111 /* UIKit.framework */,
+				60A65CC018EE8C400089F111 /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		60A65CA718EE8C400089F111 /* plintaKeySimulator */ = {
+			isa = PBXGroup;
+			children = (
+				60A65CB018EE8C400089F111 /* AppDelegate.h */,
+				60A65CB118EE8C400089F111 /* AppDelegate.m */,
+				60A65CB318EE8C400089F111 /* Main.storyboard */,
+				60A65CB618EE8C400089F111 /* ViewController.h */,
+				60A65CB718EE8C400089F111 /* ViewController.m */,
+				60A65CB918EE8C400089F111 /* Images.xcassets */,
+				60A65CA818EE8C400089F111 /* Supporting Files */,
+			);
+			path = plintaKeySimulator;
+			sourceTree = "<group>";
+		};
+		60A65CA818EE8C400089F111 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				60A65CA918EE8C400089F111 /* plintaKeySimulator-Info.plist */,
+				60A65CAA18EE8C400089F111 /* InfoPlist.strings */,
+				60A65CAD18EE8C400089F111 /* main.m */,
+				60A65CAF18EE8C400089F111 /* plintaKeySimulator-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		60A65CC618EE8C400089F111 /* plintaKeySimulatorTests */ = {
+			isa = PBXGroup;
+			children = (
+				60A65CCC18EE8C400089F111 /* plintaKeySimulatorTests.m */,
+				60A65CC718EE8C400089F111 /* Supporting Files */,
+			);
+			path = plintaKeySimulatorTests;
+			sourceTree = "<group>";
+		};
+		60A65CC718EE8C400089F111 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				60A65CC818EE8C400089F111 /* plintaKeySimulatorTests-Info.plist */,
+				60A65CC918EE8C400089F111 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		60A65C9D18EE8C400089F111 /* plintaKeySimulator */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 60A65CD018EE8C400089F111 /* Build configuration list for PBXNativeTarget "plintaKeySimulator" */;
+			buildPhases = (
+				60A65C9A18EE8C400089F111 /* Sources */,
+				60A65C9B18EE8C400089F111 /* Frameworks */,
+				60A65C9C18EE8C400089F111 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = plintaKeySimulator;
+			productName = plintaKeySimulator;
+			productReference = 60A65C9E18EE8C400089F111 /* plintaKeySimulator.app */;
+			productType = "com.apple.product-type.application";
+		};
+		60A65CBE18EE8C400089F111 /* plintaKeySimulatorTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 60A65CD318EE8C400089F111 /* Build configuration list for PBXNativeTarget "plintaKeySimulatorTests" */;
+			buildPhases = (
+				60A65CBB18EE8C400089F111 /* Sources */,
+				60A65CBC18EE8C400089F111 /* Frameworks */,
+				60A65CBD18EE8C400089F111 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				60A65CC518EE8C400089F111 /* PBXTargetDependency */,
+			);
+			name = plintaKeySimulatorTests;
+			productName = plintaKeySimulatorTests;
+			productReference = 60A65CBF18EE8C400089F111 /* plintaKeySimulatorTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		60A65C9618EE8C400089F111 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = "Plinta Vinnova";
+				TargetAttributes = {
+					60A65CBE18EE8C400089F111 = {
+						TestTargetID = 60A65C9D18EE8C400089F111;
+					};
+				};
+			};
+			buildConfigurationList = 60A65C9918EE8C400089F111 /* Build configuration list for PBXProject "plintaKeySimulator" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 60A65C9518EE8C400089F111;
+			productRefGroup = 60A65C9F18EE8C400089F111 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				60A65C9D18EE8C400089F111 /* plintaKeySimulator */,
+				60A65CBE18EE8C400089F111 /* plintaKeySimulatorTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		60A65C9C18EE8C400089F111 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				60A65CBA18EE8C400089F111 /* Images.xcassets in Resources */,
+				60A65CAC18EE8C400089F111 /* InfoPlist.strings in Resources */,
+				60A65CB518EE8C400089F111 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		60A65CBD18EE8C400089F111 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				60A65CCB18EE8C400089F111 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		60A65C9A18EE8C400089F111 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				60A65CB818EE8C400089F111 /* ViewController.m in Sources */,
+				60A65CB218EE8C400089F111 /* AppDelegate.m in Sources */,
+				60A65CAE18EE8C400089F111 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		60A65CBB18EE8C400089F111 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				60A65CCD18EE8C400089F111 /* plintaKeySimulatorTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		60A65CC518EE8C400089F111 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 60A65C9D18EE8C400089F111 /* plintaKeySimulator */;
+			targetProxy = 60A65CC418EE8C400089F111 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		60A65CAA18EE8C400089F111 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				60A65CAB18EE8C400089F111 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		60A65CB318EE8C400089F111 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				60A65CB418EE8C400089F111 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		60A65CC918EE8C400089F111 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				60A65CCA18EE8C400089F111 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		60A65CCE18EE8C400089F111 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		60A65CCF18EE8C400089F111 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		60A65CD118EE8C400089F111 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "plintaKeySimulator/plintaKeySimulator-Prefix.pch";
+				INFOPLIST_FILE = "plintaKeySimulator/plintaKeySimulator-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		60A65CD218EE8C400089F111 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "plintaKeySimulator/plintaKeySimulator-Prefix.pch";
+				INFOPLIST_FILE = "plintaKeySimulator/plintaKeySimulator-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		60A65CD418EE8C400089F111 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/plintaKeySimulator.app/plintaKeySimulator";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "plintaKeySimulator/plintaKeySimulator-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "plintaKeySimulatorTests/plintaKeySimulatorTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		60A65CD518EE8C400089F111 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/plintaKeySimulator.app/plintaKeySimulator";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "plintaKeySimulator/plintaKeySimulator-Prefix.pch";
+				INFOPLIST_FILE = "plintaKeySimulatorTests/plintaKeySimulatorTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		60A65C9918EE8C400089F111 /* Build configuration list for PBXProject "plintaKeySimulator" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				60A65CCE18EE8C400089F111 /* Debug */,
+				60A65CCF18EE8C400089F111 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		60A65CD018EE8C400089F111 /* Build configuration list for PBXNativeTarget "plintaKeySimulator" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				60A65CD118EE8C400089F111 /* Debug */,
+				60A65CD218EE8C400089F111 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		60A65CD318EE8C400089F111 /* Build configuration list for PBXNativeTarget "plintaKeySimulatorTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				60A65CD418EE8C400089F111 /* Debug */,
+				60A65CD518EE8C400089F111 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 60A65C9618EE8C400089F111 /* Project object */;
+}
