@@ -14,13 +14,20 @@
 		60A65CAE18EE8C400089F111 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 60A65CAD18EE8C400089F111 /* main.m */; };
 		60A65CB218EE8C400089F111 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 60A65CB118EE8C400089F111 /* AppDelegate.m */; };
 		60A65CB518EE8C400089F111 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 60A65CB318EE8C400089F111 /* Main.storyboard */; };
-		60A65CB818EE8C400089F111 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 60A65CB718EE8C400089F111 /* ViewController.m */; };
-		60A65CBA18EE8C400089F111 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 60A65CB918EE8C400089F111 /* Images.xcassets */; };
+		60A65CB818EE8C400089F111 /* keyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 60A65CB718EE8C400089F111 /* keyViewController.m */; };
 		60A65CC118EE8C400089F111 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 60A65CC018EE8C400089F111 /* XCTest.framework */; };
 		60A65CC218EE8C400089F111 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 60A65CA118EE8C400089F111 /* Foundation.framework */; };
 		60A65CC318EE8C400089F111 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 60A65CA518EE8C400089F111 /* UIKit.framework */; };
 		60A65CCB18EE8C400089F111 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 60A65CC918EE8C400089F111 /* InfoPlist.strings */; };
 		60A65CCD18EE8C400089F111 /* plintaKeySimulatorTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 60A65CCC18EE8C400089F111 /* plintaKeySimulatorTests.m */; };
+		60A65CD718EE8D070089F111 /* CoreBluetooth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 60A65CD618EE8D060089F111 /* CoreBluetooth.framework */; };
+		60A65CD918EE8D0F0089F111 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 60A65CD818EE8D0F0089F111 /* AudioToolbox.framework */; };
+		60A65CDB18EE8DC80089F111 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 60A65CDA18EE8DC80089F111 /* Images.xcassets */; };
+		60A65D2418EEA1F20089F111 /* bg-568@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 60A65D2118EEA1F20089F111 /* bg-568@2x.png */; };
+		60A65D2518EEA1F20089F111 /* bg.png in Resources */ = {isa = PBXBuildFile; fileRef = 60A65D2218EEA1F20089F111 /* bg.png */; };
+		60A65D2618EEA1F20089F111 /* bg@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 60A65D2318EEA1F20089F111 /* bg@2x.png */; };
+		60A65D2A18EEA7280089F111 /* keyBTLEPeripheral.m in Sources */ = {isa = PBXBuildFile; fileRef = 60A65D2918EEA7280089F111 /* keyBTLEPeripheral.m */; };
+		60A65D2D18EEA7610089F111 /* UIView+ZKPulseView.m in Sources */ = {isa = PBXBuildFile; fileRef = 60A65D2C18EEA7610089F111 /* UIView+ZKPulseView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,14 +52,24 @@
 		60A65CB018EE8C400089F111 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		60A65CB118EE8C400089F111 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		60A65CB418EE8C400089F111 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		60A65CB618EE8C400089F111 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		60A65CB718EE8C400089F111 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		60A65CB918EE8C400089F111 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		60A65CB618EE8C400089F111 /* keyViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = keyViewController.h; sourceTree = "<group>"; };
+		60A65CB718EE8C400089F111 /* keyViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = keyViewController.m; sourceTree = "<group>"; };
 		60A65CBF18EE8C400089F111 /* plintaKeySimulatorTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = plintaKeySimulatorTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		60A65CC018EE8C400089F111 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		60A65CC818EE8C400089F111 /* plintaKeySimulatorTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "plintaKeySimulatorTests-Info.plist"; sourceTree = "<group>"; };
 		60A65CCA18EE8C400089F111 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		60A65CCC18EE8C400089F111 /* plintaKeySimulatorTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = plintaKeySimulatorTests.m; sourceTree = "<group>"; };
+		60A65CD618EE8D060089F111 /* CoreBluetooth.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreBluetooth.framework; path = System/Library/Frameworks/CoreBluetooth.framework; sourceTree = SDKROOT; };
+		60A65CD818EE8D0F0089F111 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		60A65CDA18EE8DC80089F111 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		60A65D2118EEA1F20089F111 /* bg-568@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "bg-568@2x.png"; sourceTree = "<group>"; };
+		60A65D2218EEA1F20089F111 /* bg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bg.png; sourceTree = "<group>"; };
+		60A65D2318EEA1F20089F111 /* bg@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "bg@2x.png"; sourceTree = "<group>"; };
+		60A65D2818EEA7280089F111 /* keyBTLEPeripheral.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = keyBTLEPeripheral.h; sourceTree = "<group>"; };
+		60A65D2918EEA7280089F111 /* keyBTLEPeripheral.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = keyBTLEPeripheral.m; sourceTree = "<group>"; };
+		60A65D2B18EEA7610089F111 /* UIView+ZKPulseView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+ZKPulseView.h"; sourceTree = "<group>"; };
+		60A65D2C18EEA7610089F111 /* UIView+ZKPulseView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+ZKPulseView.m"; sourceTree = "<group>"; };
+		60A65D2E18EEA8890089F111 /* plinta_car_service.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = plinta_car_service.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +77,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				60A65CD918EE8D0F0089F111 /* AudioToolbox.framework in Frameworks */,
+				60A65CD718EE8D070089F111 /* CoreBluetooth.framework in Frameworks */,
 				60A65CA418EE8C400089F111 /* CoreGraphics.framework in Frameworks */,
 				60A65CA618EE8C400089F111 /* UIKit.framework in Frameworks */,
 				60A65CA218EE8C400089F111 /* Foundation.framework in Frameworks */,
@@ -82,6 +101,8 @@
 		60A65C9518EE8C400089F111 = {
 			isa = PBXGroup;
 			children = (
+				60A65D2718EEA6D30089F111 /* classes */,
+				60A65D2018EEA1EA0089F111 /* image */,
 				60A65CA718EE8C400089F111 /* plintaKeySimulator */,
 				60A65CC618EE8C400089F111 /* plintaKeySimulatorTests */,
 				60A65CA018EE8C400089F111 /* Frameworks */,
@@ -101,6 +122,8 @@
 		60A65CA018EE8C400089F111 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				60A65CD818EE8D0F0089F111 /* AudioToolbox.framework */,
+				60A65CD618EE8D060089F111 /* CoreBluetooth.framework */,
 				60A65CA118EE8C400089F111 /* Foundation.framework */,
 				60A65CA318EE8C400089F111 /* CoreGraphics.framework */,
 				60A65CA518EE8C400089F111 /* UIKit.framework */,
@@ -115,9 +138,8 @@
 				60A65CB018EE8C400089F111 /* AppDelegate.h */,
 				60A65CB118EE8C400089F111 /* AppDelegate.m */,
 				60A65CB318EE8C400089F111 /* Main.storyboard */,
-				60A65CB618EE8C400089F111 /* ViewController.h */,
-				60A65CB718EE8C400089F111 /* ViewController.m */,
-				60A65CB918EE8C400089F111 /* Images.xcassets */,
+				60A65CB618EE8C400089F111 /* keyViewController.h */,
+				60A65CB718EE8C400089F111 /* keyViewController.m */,
 				60A65CA818EE8C400089F111 /* Supporting Files */,
 			);
 			path = plintaKeySimulator;
@@ -126,6 +148,7 @@
 		60A65CA818EE8C400089F111 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				60A65CDA18EE8DC80089F111 /* Images.xcassets */,
 				60A65CA918EE8C400089F111 /* plintaKeySimulator-Info.plist */,
 				60A65CAA18EE8C400089F111 /* InfoPlist.strings */,
 				60A65CAD18EE8C400089F111 /* main.m */,
@@ -150,6 +173,28 @@
 				60A65CC918EE8C400089F111 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		60A65D2018EEA1EA0089F111 /* image */ = {
+			isa = PBXGroup;
+			children = (
+				60A65D2118EEA1F20089F111 /* bg-568@2x.png */,
+				60A65D2218EEA1F20089F111 /* bg.png */,
+				60A65D2318EEA1F20089F111 /* bg@2x.png */,
+			);
+			name = image;
+			sourceTree = "<group>";
+		};
+		60A65D2718EEA6D30089F111 /* classes */ = {
+			isa = PBXGroup;
+			children = (
+				60A65D2E18EEA8890089F111 /* plinta_car_service.h */,
+				60A65D2B18EEA7610089F111 /* UIView+ZKPulseView.h */,
+				60A65D2C18EEA7610089F111 /* UIView+ZKPulseView.m */,
+				60A65D2818EEA7280089F111 /* keyBTLEPeripheral.h */,
+				60A65D2918EEA7280089F111 /* keyBTLEPeripheral.m */,
+			);
+			name = classes;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -199,6 +244,13 @@
 				LastUpgradeCheck = 0510;
 				ORGANIZATIONNAME = "Plinta Vinnova";
 				TargetAttributes = {
+					60A65C9D18EE8C400089F111 = {
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+						};
+					};
 					60A65CBE18EE8C400089F111 = {
 						TestTargetID = 60A65C9D18EE8C400089F111;
 					};
@@ -228,9 +280,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				60A65CBA18EE8C400089F111 /* Images.xcassets in Resources */,
+				60A65D2518EEA1F20089F111 /* bg.png in Resources */,
+				60A65CDB18EE8DC80089F111 /* Images.xcassets in Resources */,
 				60A65CAC18EE8C400089F111 /* InfoPlist.strings in Resources */,
+				60A65D2618EEA1F20089F111 /* bg@2x.png in Resources */,
 				60A65CB518EE8C400089F111 /* Main.storyboard in Resources */,
+				60A65D2418EEA1F20089F111 /* bg-568@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -249,8 +304,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				60A65CB818EE8C400089F111 /* ViewController.m in Sources */,
+				60A65CB818EE8C400089F111 /* keyViewController.m in Sources */,
 				60A65CB218EE8C400089F111 /* AppDelegate.m in Sources */,
+				60A65D2D18EEA7610089F111 /* UIView+ZKPulseView.m in Sources */,
+				60A65D2A18EEA7280089F111 /* keyBTLEPeripheral.m in Sources */,
 				60A65CAE18EE8C400089F111 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -374,8 +431,8 @@
 		60A65CD118EE8C400089F111 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon-2";
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "LaunchImage-1";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "plintaKeySimulator/plintaKeySimulator-Prefix.pch";
 				INFOPLIST_FILE = "plintaKeySimulator/plintaKeySimulator-Info.plist";
@@ -387,8 +444,8 @@
 		60A65CD218EE8C400089F111 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon-2";
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "LaunchImage-1";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "plintaKeySimulator/plintaKeySimulator-Prefix.pch";
 				INFOPLIST_FILE = "plintaKeySimulator/plintaKeySimulator-Info.plist";
