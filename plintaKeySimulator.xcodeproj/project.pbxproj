@@ -28,6 +28,13 @@
 		60A65D2618EEA1F20089F111 /* bg@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 60A65D2318EEA1F20089F111 /* bg@2x.png */; };
 		60A65D2A18EEA7280089F111 /* keyBTLEPeripheral.m in Sources */ = {isa = PBXBuildFile; fileRef = 60A65D2918EEA7280089F111 /* keyBTLEPeripheral.m */; };
 		60A65D2D18EEA7610089F111 /* UIView+ZKPulseView.m in Sources */ = {isa = PBXBuildFile; fileRef = 60A65D2C18EEA7610089F111 /* UIView+ZKPulseView.m */; };
+		60A65D3018F15A810089F111 /* key.png in Resources */ = {isa = PBXBuildFile; fileRef = 60A65D2F18F15A810089F111 /* key.png */; };
+		60A65D3718F15A990089F111 /* sending_01.png in Resources */ = {isa = PBXBuildFile; fileRef = 60A65D3218F15A990089F111 /* sending_01.png */; };
+		60A65D3818F15A990089F111 /* sending_02.png in Resources */ = {isa = PBXBuildFile; fileRef = 60A65D3318F15A990089F111 /* sending_02.png */; };
+		60A65D3918F15A990089F111 /* sending_03.png in Resources */ = {isa = PBXBuildFile; fileRef = 60A65D3418F15A990089F111 /* sending_03.png */; };
+		60A65D3A18F15A990089F111 /* sending_04.png in Resources */ = {isa = PBXBuildFile; fileRef = 60A65D3518F15A990089F111 /* sending_04.png */; };
+		60A65D3C18F15AA30089F111 /* connected.png in Resources */ = {isa = PBXBuildFile; fileRef = 60A65D3B18F15AA30089F111 /* connected.png */; };
+		60A65D3E18F15D040089F111 /* not_connected.png in Resources */ = {isa = PBXBuildFile; fileRef = 60A65D3D18F15D040089F111 /* not_connected.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -70,6 +77,13 @@
 		60A65D2B18EEA7610089F111 /* UIView+ZKPulseView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+ZKPulseView.h"; sourceTree = "<group>"; };
 		60A65D2C18EEA7610089F111 /* UIView+ZKPulseView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+ZKPulseView.m"; sourceTree = "<group>"; };
 		60A65D2E18EEA8890089F111 /* plinta_car_service.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = plinta_car_service.h; sourceTree = "<group>"; };
+		60A65D2F18F15A810089F111 /* key.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = key.png; sourceTree = "<group>"; };
+		60A65D3218F15A990089F111 /* sending_01.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sending_01.png; sourceTree = "<group>"; };
+		60A65D3318F15A990089F111 /* sending_02.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sending_02.png; sourceTree = "<group>"; };
+		60A65D3418F15A990089F111 /* sending_03.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sending_03.png; sourceTree = "<group>"; };
+		60A65D3518F15A990089F111 /* sending_04.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sending_04.png; sourceTree = "<group>"; };
+		60A65D3B18F15AA30089F111 /* connected.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = connected.png; sourceTree = "<group>"; };
+		60A65D3D18F15D040089F111 /* not_connected.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = not_connected.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -178,6 +192,13 @@
 		60A65D2018EEA1EA0089F111 /* image */ = {
 			isa = PBXGroup;
 			children = (
+				60A65D3D18F15D040089F111 /* not_connected.png */,
+				60A65D3B18F15AA30089F111 /* connected.png */,
+				60A65D3218F15A990089F111 /* sending_01.png */,
+				60A65D3318F15A990089F111 /* sending_02.png */,
+				60A65D3418F15A990089F111 /* sending_03.png */,
+				60A65D3518F15A990089F111 /* sending_04.png */,
+				60A65D2F18F15A810089F111 /* key.png */,
 				60A65D2118EEA1F20089F111 /* bg-568@2x.png */,
 				60A65D2218EEA1F20089F111 /* bg.png */,
 				60A65D2318EEA1F20089F111 /* bg@2x.png */,
@@ -280,12 +301,19 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				60A65D3918F15A990089F111 /* sending_03.png in Resources */,
 				60A65D2518EEA1F20089F111 /* bg.png in Resources */,
 				60A65CDB18EE8DC80089F111 /* Images.xcassets in Resources */,
 				60A65CAC18EE8C400089F111 /* InfoPlist.strings in Resources */,
 				60A65D2618EEA1F20089F111 /* bg@2x.png in Resources */,
+				60A65D3018F15A810089F111 /* key.png in Resources */,
 				60A65CB518EE8C400089F111 /* Main.storyboard in Resources */,
+				60A65D3818F15A990089F111 /* sending_02.png in Resources */,
+				60A65D3E18F15D040089F111 /* not_connected.png in Resources */,
+				60A65D3C18F15AA30089F111 /* connected.png in Resources */,
+				60A65D3A18F15A990089F111 /* sending_04.png in Resources */,
 				60A65D2418EEA1F20089F111 /* bg-568@2x.png in Resources */,
+				60A65D3718F15A990089F111 /* sending_01.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

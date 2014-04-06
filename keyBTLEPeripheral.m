@@ -12,16 +12,7 @@
 #import "plinta_car_service.h"
 
 
-@protocol keyDelegate <NSObject>
 
-//Must implement, this could and should be move to MqttCleint
-@required
-- (void) didReceivedReadRequest: (NSUInteger)code;
-
-
-
-
-@end
 
 
 @interface keyBTLEPeripheral() <CBPeripheralManagerDelegate>
@@ -37,17 +28,33 @@
 @implementation keyBTLEPeripheral
 @synthesize password;
 @synthesize uiid;
+@synthesize broardcast;
 
 
 -(keyBTLEPeripheral*) initWithClientId:(uint )clientId  {
 
     uiid=clientId;
     password=123456789;
-    return self;
+   
+    // Start up the CBPeripheralManager
+    _plinta_car_peripheralManager = [[CBPeripheralManager alloc] initWithDelegate:self queue:nil];
+ return self;
 }
 
+-(void) setBroardcast:(bool)mBroadcast{
+    
+    broardcast=mBroadcast;
+    if(mBroadcast) {
+        NSLog(@"Start advertising");
+               [self.plinta_car_peripheralManager startAdvertising:@{ CBAdvertisementDataServiceUUIDsKey : @[[CBUUID UUIDWithString:PLINTA_CAR_SERVICE_UUID]] }];
+    }
+    else{
+        NSLog(@"Stop advertising");
+                [self.plinta_car_peripheralManager stopAdvertising];
 
+    }
 
+}
 
 #pragma delegate_for_peripheral_manager
 
@@ -100,13 +107,15 @@
     
     
     // Add the characteristic to the service
-    plintaCarService.characteristics = @[self.plinta_car_ID_Characteristic,self.plinta_car_Command_Characteristic];
+    plintaCarService.characteristics = @[self.plinta_car_ID_Characteristic,self.plinta_car_PASSWORD_Characteristic,self.plinta_car_Command_Characteristic];
     //plintaCarService.characteristics = @[self.plinta_car_Command_Characteristic];
     
     
     
     // And add it to the peripheral manager
     [self.plinta_car_peripheralManager addService:plintaCarService];
+    
+    //[self.plinta_car_peripheralManager startAdvertising:@{ CBAdvertisementDataServiceUUIDsKey : @[[CBUUID UUIDWithString:PLINTA_CAR_SERVICE_UUID]] }];
 }
 
 
@@ -117,6 +126,7 @@
 - (void)peripheralManager:(CBPeripheralManager *)peripheral central:(CBCentral *)central didSubscribeToCharacteristic:(CBCharacteristic *)characteristic
 {
     NSLog(@"Central subscribed to characteristic");
+   
     
     
 }
@@ -135,10 +145,21 @@
 
 -(void)peripheralManager:(CBPeripheralManager *)peripheral didReceiveReadRequest:(CBATTRequest *)request{
     NSLog(@"Central received a read request");
-
-
-    request.value = _myID;
+    
+    
+    CBCharacteristic *aChar= request.characteristic;
+        /* Set notification on heart rate measurement */
+    
+    
+    if ([aChar.UUID isEqual:[CBUUID UUIDWithString:PLINTA_CAR_ID_CHA_UUID]])
+        {
+            request.value = _myID;
+            [self.delegate didReceivedReadRequest:10];
+        }
+    
     [self.plinta_car_peripheralManager respondToRequest:(request) withResult:CBATTErrorSuccess];
+
+
 }
 
 -(void)peripheralManager:(CBPeripheralManager *)peripheral didReceiveWriteRequests:(NSArray *)requests{

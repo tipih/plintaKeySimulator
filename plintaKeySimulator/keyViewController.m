@@ -9,7 +9,7 @@
 #import "keyViewController.h"
 #import "keyBTLEPeripheral.h"
 
-@interface keyViewController ()
+@interface keyViewController ()<keyDelegate>
 @property (readonly) keyBTLEPeripheral *plintaKey;
 
 @end
@@ -31,6 +31,8 @@
     [self.navigationController.navigationBar setTranslucent:YES];
     
     _plintaKey = [[keyBTLEPeripheral alloc] initWithClientId:1];
+    [_plintaKey setDelegate:self];
+    
 
 }
 
@@ -38,6 +40,17 @@
 {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+- (void) didReceivedReadRequest:(NSUInteger)code{
+    //to do update the UI
+    NSLog(@"Update the UI");
+}
+- (IBAction)startAdvertize:(UISwitch*)sender {
+    if (sender.isOn) {
+        _plintaKey.broardcast=TRUE;
+    }
+    else
+    _plintaKey.broardcast=FALSE;
 }
 
 @end

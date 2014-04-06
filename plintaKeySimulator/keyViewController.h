@@ -9,6 +9,7 @@
 #import <UIKit/UIKit.h>
 
 @interface keyViewController : UIViewController
+@property (weak, nonatomic) IBOutlet UISwitch *advartize;
 
 
 @end
