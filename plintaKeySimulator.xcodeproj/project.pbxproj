@@ -7,6 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		605421B118F27E4C008EE75B /* Unavngiven.png in Resources */ = {isa = PBXBuildFile; fileRef = 605421B018F27E4C008EE75B /* Unavngiven.png */; };
+		605421B718F2862E008EE75B /* not_connected.png in Resources */ = {isa = PBXBuildFile; fileRef = 605421B218F2862E008EE75B /* not_connected.png */; };
+		605421B818F2862E008EE75B /* sending_01.png in Resources */ = {isa = PBXBuildFile; fileRef = 605421B318F2862E008EE75B /* sending_01.png */; };
+		605421B918F2862E008EE75B /* sending_02.png in Resources */ = {isa = PBXBuildFile; fileRef = 605421B418F2862E008EE75B /* sending_02.png */; };
+		605421BA18F2862E008EE75B /* sending_03.png in Resources */ = {isa = PBXBuildFile; fileRef = 605421B518F2862E008EE75B /* sending_03.png */; };
+		605421BB18F2862E008EE75B /* sending_04.png in Resources */ = {isa = PBXBuildFile; fileRef = 605421B618F2862E008EE75B /* sending_04.png */; };
+		605421BD18F28636008EE75B /* connected.png in Resources */ = {isa = PBXBuildFile; fileRef = 605421BC18F28636008EE75B /* connected.png */; };
+		605421BF18F286A9008EE75B /* key.png in Resources */ = {isa = PBXBuildFile; fileRef = 605421BE18F286A9008EE75B /* key.png */; };
 		60A65CA218EE8C400089F111 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 60A65CA118EE8C400089F111 /* Foundation.framework */; };
 		60A65CA418EE8C400089F111 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 60A65CA318EE8C400089F111 /* CoreGraphics.framework */; };
 		60A65CA618EE8C400089F111 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 60A65CA518EE8C400089F111 /* UIKit.framework */; };
@@ -28,13 +36,6 @@
 		60A65D2618EEA1F20089F111 /* bg@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 60A65D2318EEA1F20089F111 /* bg@2x.png */; };
 		60A65D2A18EEA7280089F111 /* keyBTLEPeripheral.m in Sources */ = {isa = PBXBuildFile; fileRef = 60A65D2918EEA7280089F111 /* keyBTLEPeripheral.m */; };
 		60A65D2D18EEA7610089F111 /* UIView+ZKPulseView.m in Sources */ = {isa = PBXBuildFile; fileRef = 60A65D2C18EEA7610089F111 /* UIView+ZKPulseView.m */; };
-		60A65D3018F15A810089F111 /* key.png in Resources */ = {isa = PBXBuildFile; fileRef = 60A65D2F18F15A810089F111 /* key.png */; };
-		60A65D3718F15A990089F111 /* sending_01.png in Resources */ = {isa = PBXBuildFile; fileRef = 60A65D3218F15A990089F111 /* sending_01.png */; };
-		60A65D3818F15A990089F111 /* sending_02.png in Resources */ = {isa = PBXBuildFile; fileRef = 60A65D3318F15A990089F111 /* sending_02.png */; };
-		60A65D3918F15A990089F111 /* sending_03.png in Resources */ = {isa = PBXBuildFile; fileRef = 60A65D3418F15A990089F111 /* sending_03.png */; };
-		60A65D3A18F15A990089F111 /* sending_04.png in Resources */ = {isa = PBXBuildFile; fileRef = 60A65D3518F15A990089F111 /* sending_04.png */; };
-		60A65D3C18F15AA30089F111 /* connected.png in Resources */ = {isa = PBXBuildFile; fileRef = 60A65D3B18F15AA30089F111 /* connected.png */; };
-		60A65D3E18F15D040089F111 /* not_connected.png in Resources */ = {isa = PBXBuildFile; fileRef = 60A65D3D18F15D040089F111 /* not_connected.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +49,14 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		605421B018F27E4C008EE75B /* Unavngiven.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Unavngiven.png; sourceTree = "<group>"; };
+		605421B218F2862E008EE75B /* not_connected.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = not_connected.png; sourceTree = "<group>"; };
+		605421B318F2862E008EE75B /* sending_01.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sending_01.png; sourceTree = "<group>"; };
+		605421B418F2862E008EE75B /* sending_02.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sending_02.png; sourceTree = "<group>"; };
+		605421B518F2862E008EE75B /* sending_03.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sending_03.png; sourceTree = "<group>"; };
+		605421B618F2862E008EE75B /* sending_04.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sending_04.png; sourceTree = "<group>"; };
+		605421BC18F28636008EE75B /* connected.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = connected.png; sourceTree = "<group>"; };
+		605421BE18F286A9008EE75B /* key.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = key.png; sourceTree = "<group>"; };
 		60A65C9E18EE8C400089F111 /* plintaKeySimulator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = plintaKeySimulator.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		60A65CA118EE8C400089F111 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		60A65CA318EE8C400089F111 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -77,13 +86,6 @@
 		60A65D2B18EEA7610089F111 /* UIView+ZKPulseView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+ZKPulseView.h"; sourceTree = "<group>"; };
 		60A65D2C18EEA7610089F111 /* UIView+ZKPulseView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+ZKPulseView.m"; sourceTree = "<group>"; };
 		60A65D2E18EEA8890089F111 /* plinta_car_service.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = plinta_car_service.h; sourceTree = "<group>"; };
-		60A65D2F18F15A810089F111 /* key.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = key.png; sourceTree = "<group>"; };
-		60A65D3218F15A990089F111 /* sending_01.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sending_01.png; sourceTree = "<group>"; };
-		60A65D3318F15A990089F111 /* sending_02.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sending_02.png; sourceTree = "<group>"; };
-		60A65D3418F15A990089F111 /* sending_03.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sending_03.png; sourceTree = "<group>"; };
-		60A65D3518F15A990089F111 /* sending_04.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sending_04.png; sourceTree = "<group>"; };
-		60A65D3B18F15AA30089F111 /* connected.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = connected.png; sourceTree = "<group>"; };
-		60A65D3D18F15D040089F111 /* not_connected.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = not_connected.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -192,13 +194,14 @@
 		60A65D2018EEA1EA0089F111 /* image */ = {
 			isa = PBXGroup;
 			children = (
-				60A65D3D18F15D040089F111 /* not_connected.png */,
-				60A65D3B18F15AA30089F111 /* connected.png */,
-				60A65D3218F15A990089F111 /* sending_01.png */,
-				60A65D3318F15A990089F111 /* sending_02.png */,
-				60A65D3418F15A990089F111 /* sending_03.png */,
-				60A65D3518F15A990089F111 /* sending_04.png */,
-				60A65D2F18F15A810089F111 /* key.png */,
+				605421BE18F286A9008EE75B /* key.png */,
+				605421BC18F28636008EE75B /* connected.png */,
+				605421B218F2862E008EE75B /* not_connected.png */,
+				605421B318F2862E008EE75B /* sending_01.png */,
+				605421B418F2862E008EE75B /* sending_02.png */,
+				605421B518F2862E008EE75B /* sending_03.png */,
+				605421B618F2862E008EE75B /* sending_04.png */,
+				605421B018F27E4C008EE75B /* Unavngiven.png */,
 				60A65D2118EEA1F20089F111 /* bg-568@2x.png */,
 				60A65D2218EEA1F20089F111 /* bg.png */,
 				60A65D2318EEA1F20089F111 /* bg@2x.png */,
@@ -266,6 +269,7 @@
 				ORGANIZATIONNAME = "Plinta Vinnova";
 				TargetAttributes = {
 					60A65C9D18EE8C400089F111 = {
+						DevelopmentTeam = HXRKJ6WW3N;
 						SystemCapabilities = {
 							com.apple.BackgroundModes = {
 								enabled = 1;
@@ -301,19 +305,20 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				60A65D3918F15A990089F111 /* sending_03.png in Resources */,
 				60A65D2518EEA1F20089F111 /* bg.png in Resources */,
+				605421B818F2862E008EE75B /* sending_01.png in Resources */,
 				60A65CDB18EE8DC80089F111 /* Images.xcassets in Resources */,
+				605421BA18F2862E008EE75B /* sending_03.png in Resources */,
+				605421BB18F2862E008EE75B /* sending_04.png in Resources */,
 				60A65CAC18EE8C400089F111 /* InfoPlist.strings in Resources */,
+				605421B918F2862E008EE75B /* sending_02.png in Resources */,
+				605421BD18F28636008EE75B /* connected.png in Resources */,
 				60A65D2618EEA1F20089F111 /* bg@2x.png in Resources */,
-				60A65D3018F15A810089F111 /* key.png in Resources */,
+				605421B718F2862E008EE75B /* not_connected.png in Resources */,
+				605421B118F27E4C008EE75B /* Unavngiven.png in Resources */,
+				605421BF18F286A9008EE75B /* key.png in Resources */,
 				60A65CB518EE8C400089F111 /* Main.storyboard in Resources */,
-				60A65D3818F15A990089F111 /* sending_02.png in Resources */,
-				60A65D3E18F15D040089F111 /* not_connected.png in Resources */,
-				60A65D3C18F15AA30089F111 /* connected.png in Resources */,
-				60A65D3A18F15A990089F111 /* sending_04.png in Resources */,
 				60A65D2418EEA1F20089F111 /* bg-568@2x.png in Resources */,
-				60A65D3718F15A990089F111 /* sending_01.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -461,10 +466,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon-2";
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "LaunchImage-1";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "plintaKeySimulator/plintaKeySimulator-Prefix.pch";
 				INFOPLIST_FILE = "plintaKeySimulator/plintaKeySimulator-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -474,10 +482,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon-2";
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "LaunchImage-1";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "plintaKeySimulator/plintaKeySimulator-Prefix.pch";
 				INFOPLIST_FILE = "plintaKeySimulator/plintaKeySimulator-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
@@ -541,6 +552,7 @@
 				60A65CD218EE8C400089F111 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		60A65CD318EE8C400089F111 /* Build configuration list for PBXNativeTarget "plintaKeySimulatorTests" */ = {
 			isa = XCConfigurationList;
@@ -549,6 +561,7 @@
 				60A65CD518EE8C400089F111 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

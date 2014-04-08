@@ -34,12 +34,18 @@
 -(keyBTLEPeripheral*) initWithClientId:(uint )clientId  {
 
     uiid=clientId;
+    
+    //TODO
+    //Passwork should be comverted into a sha256 using a common key, key could be exechange doing paring
+    //for now it will just be simple kode, send in clear text
     password=123456789;
    
     // Start up the CBPeripheralManager
     _plinta_car_peripheralManager = [[CBPeripheralManager alloc] initWithDelegate:self queue:nil];
  return self;
 }
+
+
 
 -(void) setBroardcast:(bool)mBroadcast{
     
@@ -56,6 +62,11 @@
 
 }
 
+-(void) setUiid:(uint)mUiid{
+    uiid=mUiid;
+    NSLog(@"Updating the UIID");
+}
+
 #pragma delegate_for_peripheral_manager
 
 /** Required protocol method.  A full app should take care of all the possible states,
@@ -63,6 +74,8 @@
  */
 - (void)peripheralManagerDidUpdateState:(CBPeripheralManager *)peripheral
 {
+   
+    
     // Opt out from any other state
     if (peripheral.state != CBPeripheralManagerStatePoweredOn) {
         
@@ -153,18 +166,30 @@
     
     if ([aChar.UUID isEqual:[CBUUID UUIDWithString:PLINTA_CAR_ID_CHA_UUID]])
         {
-            request.value = _myID;
+            
+            
+            request.value = [NSData dataWithBytes: &uiid length: sizeof(uiid)];
             [self.delegate didReceivedReadRequest:10];
+              [self.plinta_car_peripheralManager respondToRequest:(request) withResult:CBATTErrorSuccess];
         }
-    
-    [self.plinta_car_peripheralManager respondToRequest:(request) withResult:CBATTErrorSuccess];
+    if ([aChar.UUID isEqual:[CBUUID UUIDWithString:PLINTA_CAR_PASSWORD_CHA_UUID]])
+    {
+        
+        
+        request.value = [NSData dataWithBytes: &password length: sizeof(password)];
+        [self.delegate didReceivedReadRequest:20];
+          [self.plinta_car_peripheralManager respondToRequest:(request) withResult:CBATTErrorSuccess];
+    }
+    else
+     [self.plinta_car_peripheralManager respondToRequest:(request) withResult:CBATTErrorInsufficientAuthentication];
 
 
 }
 
 -(void)peripheralManager:(CBPeripheralManager *)peripheral didReceiveWriteRequests:(NSArray *)requests{
     NSLog(@"Central received a write request");
-
+    //Todo missing test for request, if we have sufficient security
+    
     CBATTRequest *myReq=(CBATTRequest*)[requests objectAtIndex:0];
     
     
