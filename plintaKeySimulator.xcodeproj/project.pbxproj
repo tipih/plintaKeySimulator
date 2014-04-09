@@ -36,6 +36,8 @@
 		60A65D2618EEA1F20089F111 /* bg@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 60A65D2318EEA1F20089F111 /* bg@2x.png */; };
 		60A65D2A18EEA7280089F111 /* keyBTLEPeripheral.m in Sources */ = {isa = PBXBuildFile; fileRef = 60A65D2918EEA7280089F111 /* keyBTLEPeripheral.m */; };
 		60A65D2D18EEA7610089F111 /* UIView+ZKPulseView.m in Sources */ = {isa = PBXBuildFile; fileRef = 60A65D2C18EEA7610089F111 /* UIView+ZKPulseView.m */; };
+		60AD120E18F3FE5E006873DF /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 60AD120D18F3FE5E006873DF /* Security.framework */; };
+		60AD121418F50E5C006873DF /* security.m in Sources */ = {isa = PBXBuildFile; fileRef = 60AD121318F50E5C006873DF /* security.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -86,6 +88,9 @@
 		60A65D2B18EEA7610089F111 /* UIView+ZKPulseView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+ZKPulseView.h"; sourceTree = "<group>"; };
 		60A65D2C18EEA7610089F111 /* UIView+ZKPulseView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+ZKPulseView.m"; sourceTree = "<group>"; };
 		60A65D2E18EEA8890089F111 /* plinta_car_service.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = plinta_car_service.h; sourceTree = "<group>"; };
+		60AD120D18F3FE5E006873DF /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		60AD121218F50E5C006873DF /* security.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = security.h; sourceTree = "<group>"; };
+		60AD121318F50E5C006873DF /* security.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = security.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -93,6 +98,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				60AD120E18F3FE5E006873DF /* Security.framework in Frameworks */,
 				60A65CD918EE8D0F0089F111 /* AudioToolbox.framework in Frameworks */,
 				60A65CD718EE8D070089F111 /* CoreBluetooth.framework in Frameworks */,
 				60A65CA418EE8C400089F111 /* CoreGraphics.framework in Frameworks */,
@@ -138,6 +144,7 @@
 		60A65CA018EE8C400089F111 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				60AD120D18F3FE5E006873DF /* Security.framework */,
 				60A65CD818EE8D0F0089F111 /* AudioToolbox.framework */,
 				60A65CD618EE8D060089F111 /* CoreBluetooth.framework */,
 				60A65CA118EE8C400089F111 /* Foundation.framework */,
@@ -217,6 +224,8 @@
 				60A65D2C18EEA7610089F111 /* UIView+ZKPulseView.m */,
 				60A65D2818EEA7280089F111 /* keyBTLEPeripheral.h */,
 				60A65D2918EEA7280089F111 /* keyBTLEPeripheral.m */,
+				60AD121218F50E5C006873DF /* security.h */,
+				60AD121318F50E5C006873DF /* security.m */,
 			);
 			name = classes;
 			sourceTree = "<group>";
@@ -342,6 +351,7 @@
 				60A65D2D18EEA7610089F111 /* UIView+ZKPulseView.m in Sources */,
 				60A65D2A18EEA7280089F111 /* keyBTLEPeripheral.m in Sources */,
 				60A65CAE18EE8C400089F111 /* main.m in Sources */,
+				60AD121418F50E5C006873DF /* security.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

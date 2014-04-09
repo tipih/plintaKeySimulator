@@ -8,13 +8,19 @@
 
 #import "AppDelegate.h"
 
+
 @implementation AppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     // Override point for customization after application launch.
-    
-    // Handle launching from a notification
+    NSSetUncaughtExceptionHandler(&myExceptionHandler);
+
+    signal(SIGKILL,&SignalHandler);
+    signal(SIGSTOP,&SignalHandler);
+
+
+       // Handle launching from a notification
     UILocalNotification *locationNotification = [launchOptions objectForKey:UIApplicationLaunchOptionsLocalNotificationKey];
     if (locationNotification) {
         // Set icon badge number to zero
@@ -62,6 +68,16 @@
      [application presentLocalNotificationNow:localNotification];
     
     
+}
+void myExceptionHandler(NSException *exception)
+{
+    NSArray *stack = [exception callStackReturnAddresses];
+    NSLog(@"Stack trace: %@", stack);
+}
+
+void SignalHandler(int signal)
+{
+    NSLog(@"Signal %d",signal);
 }
 
 @end
