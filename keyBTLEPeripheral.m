@@ -46,7 +46,8 @@
     uiid=clientId;
     NSString* encodedPassword;
     NSString* generated_salt;
-
+    NSString* salt;
+    NSString* passW;
         password=123456789; //Super secret passfraze
         encodedPassword=[security generateKey:&generated_salt password:password];
 
@@ -58,6 +59,26 @@
    
     _mySalt =[generated_salt dataUsingEncoding:NSUTF8StringEncoding];
     _myIDPass= [encodedPassword dataUsingEncoding:NSUTF8StringEncoding];
+   
+    
+    
+    
+    int localPassword=123456789; //Super secret passfraze
+    
+    
+    
+    if([security validtePasswordWithSalt:passW salt:salt userPassword:localPassword])
+    {
+        NSLog(@"We got a match, send signal to mqtt broaker");
+        
+    }
+    else NSLog(@"Wrong code");
+
+    
+    
+    
+    
+    
     
     
     // Start up the CBPeripheralManager
@@ -216,7 +237,7 @@
             
        
                              
-            
+            NSLog(@"Car Id Value = %@",request.value);
                 
             [self.delegate didReceivedReadRequest:10];
             [self.plinta_car_peripheralManager respondToRequest:(request) withResult:CBATTErrorSuccess];

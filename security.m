@@ -16,7 +16,7 @@
 +(NSUInteger)GenerateSalt
 {
     // random number (change the modulus to the length you'd like)
-    NSUInteger r = arc4random() % 100000;
+    NSUInteger r = arc4random() % 1;
     return r;
 }
 
@@ -69,6 +69,40 @@
     return output;
 }
 
+
++(NSString*) generateKeyWithSalt:(NSString *)mSalt password:(int) password{
+    
+    NSString* mPass=[self computeSHA256DigestForString:[NSString stringWithFormat:@"%d", password]];
+    NSLog(@"mPass =%@",mPass);
+    
+    NSString *computedHashString = [NSString stringWithFormat:@"%@%@", mPass, mSalt];
+    NSLog(@"Hash string %@",computedHashString);
+    mPass=[self computeSHA256DigestForString:computedHashString];
+    NSLog(@"final key %@",mPass);
+    
+    
+    return mPass;
+}
+
+
+//Validate a password with a salt and a localpassword
++ (bool)validtePasswordWithSalt:(NSString *)password salt:(NSString *)mSalt userPassword:(int)userpassword{
+    
+    
+    NSLog(@"Password %@",password);
+    NSString* encodedPassword=[self generateKeyWithSalt:mSalt password:userpassword];
+    
+    if ([encodedPassword isEqualToString:password])
+    {
+        return true;
+    }
+    else
+        NSLog(@"Wrong passeword");
+    
+    
+    
+    return true;
+}
 
 
 @end

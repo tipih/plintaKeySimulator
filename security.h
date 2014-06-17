@@ -12,6 +12,7 @@
 
 
 +(NSString*) generateKey:(NSString **)mSalt password:(int) password;
-
++(NSString*) generateKeyWithSalt:(NSString *)mSalt password:(int) password;
++(bool) validtePasswordWithSalt:(NSString *)password salt:(NSString*) mSalt userPassword:(int) userpassword;
 
 @end
